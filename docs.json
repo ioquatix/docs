@@ -1,0 +1,27 @@
+{
+	"Docs::Index#update": {
+		"description": "Update the index",
+		"signature": "Docs::Index#update()",
+		"returns": "Docs::Index"
+	},
+	}
+
+	"Array#push": {
+		"scope": "Array",
+		"description": "Adds one or more elements to the end of an array and returns array.",
+		"type": "array.push(*objects) -> self",
+		"parameters": {
+			"items": {"type": "objects", "description": "The elements to add to the array."}
+		},
+	},
+
+	"Array#each": {
+		"scope": "Array",
+		"description": "Calls the given block for each element of the array, passing the element as parameter.",
+		"type": ["array.each {|element| ... } -> self", "array.each -> Enumerator"],
+		"parameters": {
+			"yields": {"description": "The block to call for each element.",
+				"parameters": {"element": {"description": "The element of the array."}}}
+		}
+	},
+}
